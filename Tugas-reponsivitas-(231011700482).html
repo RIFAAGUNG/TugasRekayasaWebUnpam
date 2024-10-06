@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Web</title>
+    <style>
+        /* Gaya umum untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Gaya untuk header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Gaya untuk navigasi */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        /* Gaya untuk konten utama */
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .content-box {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            flex-basis: 30%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Gaya responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .content-box {
+                flex-basis: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .content-box {
+                flex-basis: 100%;
+            }
+        }
+
+        /* Gaya untuk footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Web Design</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <div class="content-box">
+            <h2>Box 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas urna ut lorem interdum, nec lacinia turpis venenatis.</p>
+        </div>
+        <div class="content-box">
+            <h2>Box 2</h2>
+            <p>Quisque euismod quam sed massa suscipit, at tempor elit lacinia. Cras a tortor id leo vestibulum faucibus.</p>
+        </div>
+        <div class="content-box">
+            <h2>Box 3</h2>
+            <p>Integer id nisi et velit fermentum consequat. Nullam ac diam malesuada, varius libero a, scelerisque libero.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+
+</body>
+</html>

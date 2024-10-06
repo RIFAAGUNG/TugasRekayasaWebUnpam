@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey pelanggan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Navbar code from above -->
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-5">
+        <h2 class="text-center">Survey pelanggan</h2>
+        <form class="p-4 border rounded shadow-sm">
+            <div class="mb-3">
+                <label class="form-label">Jenis makanan apa yang anda sukai?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Bakso">
+                    <label class="form-check-label" for="Bakso">Bakso</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Bread/Cake">
+                    <label class="form-check-label" for="Nasi/Roti">Nasi/Roti</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Creamy Ice">
+                    <label class="form-check-label" for="Hamburger">Hamburger</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Mie goreng/Nasi Goreng">
+                    <label class="form-check-label" for="Mie goreng/Nasi Goreng">Mie Goreng/Nasi goreng</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Berapa porsi mie goreng/nasi goreng/hamburger/bakso yang anda konsumsi dalam 1 hari?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jumlahbungkus" id="Bungkus1" value="1-2">
+                    <label class="form-check-label" for="bungkus1">1-2</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jumlahBungkus" id="bungkus3" value="3-4">
+                    <label class="form-check-label" for="bungkus3">3-4</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jumlahbungkus" id="bungkus5" value="5+">
+                    <label class="form-check-label" for="liquid5">5+</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" onclick="window.location.href='4.html'">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
